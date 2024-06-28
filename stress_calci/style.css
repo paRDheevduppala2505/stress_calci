@@ -1,0 +1,53 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container2{
+    padding-right: 60px;
+    background-color: rgb(105, 252, 105);
+    padding-left: 60px;  
+    padding-bottom: 20px; 
+}
+.container1{
+    padding-left: 60px;
+    background-color: rgb(240, 190, 98);
+    padding-right: 60px;
+    padding-bottom: 43px; 
+    padding-top: 20px;
+}
+.stressimg{
+    background-color: rgb(61, 17, 238);
+    color: #f8f5f5;
+    font-size: 16px;
+}
+.btn1{
+    background-color: rgb(189, 30, 30);
+    color: white;
+    font-size: 18px;
+}
+.btn2{
+    background-color: rgb(189, 30, 30);
+    color: white;
+    font-size: 18px;
+}
+.btn1:hover{
+    background-color: rgb(246, 241, 241);
+    color:rgb(234, 15, 15);
+    cursor: pointer;
+}
+.btn2:hover{
+    background-color: rgb(246, 241, 241);
+    color:rgb(234, 15, 15);
+    cursor: pointer;
+}
+body{
+    background-image: url(bg.png);
+}
+.head0{
+    background-color: rgb(22, 104, 129);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}

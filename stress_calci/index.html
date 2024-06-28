@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stress calci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="head0">Calculate any stress or strain value required...</h1>
+    <div class="body">
+    <div class="container1">
+        <h3 class="head1">Enter &sigma;<sub>xx</sub> or &epsilon;<sub>xx</sub> value:</h3>
+        <input type="text" id="sigmaxx" required />
+        <h3 class="head2">Enter &sigma;<sub>yy</sub> or &epsilon;<sub>yy</sub> value:</h3>
+        <input type="text" id="sigmayy" required />
+        <h3 class="head3">Enter &tau;<sub>xy</sub> or &epsilon;<sub>xy</sub>(&gamma;<sub>xy</sub>/2) value:</h3>
+        <input type="text" id="sigmaxy" required />
+        <h3 class="head4">Enter &theta;<sub>i</sub> value:</h3>
+        <input type="text" id="thetai" /><br><br><br><br>
+        <button class="btn1" id="btn1">Calculate now...</button><br><br>
+        <button class="btn2" id="btn2">Clear all</button>
+    </div>
+        
+    <div class="stressimg">
+        <img src="stress.PNG" />
+        <h2 class="terms">Terminology:</h2>
+        <ul>
+            <li>&sigma;<sub>xx</sub> or &epsilon;<sub>xx</sub> : Normal Stress/Strain in +x direction on +x plane</li>
+            <li>&sigma;<sub>yy</sub> or &epsilon;<sub>yy</sub> : Normal Stress/Strain in +y direction on +y plane</li>
+            <li>&tau;<sub>xy</sub> or &epsilon;<sub>xy</sub>   : Shear Stress/Strain in +y direction on +x plane or vice-versa</li>
+            <li>&theta;<sub>i</sub>                            : Arbitrary angle of the plane on which you want stress/strain analysis</li>
+            <li>&sigma;<sub>1</sub> or &epsilon;<sub>1</sub> and &sigma;<sub>2</sub> or &epsilon;<sub>2 : Principal Stress/Strain values for the given 2d problem</li>
+            <li>&theta;<sub>p</sub> : Angle of the Principal plane</li>
+            <li>(&sigma;<sub>xx</sub>)<sub>i</sub> or (&epsilon;<sub>xx</sub>)<sub>i</sub> : &sigma;<sub>xx</sub> or &epsilon;<sub>xx</sub> values on the arbitrary plane</li>
+            <li>(&sigma;<sub>yy</sub>)<sub>i</sub> or (&epsilon;<sub>yy</sub>)<sub>i</sub> : &sigma;<sub>yy</sub> or &epsilon;<sub>yy</sub> values on the arbitrary plane</li>
+            <li>(&tau;<sub>xy</sub>)<sub>i</sub> or (&epsilon;<sub>xy</sub>)<sub>i</sub> : &tau;<sub>xy</sub> or &epsilon;<sub>xy</sub> values on the arbitrary plane</li>
+            <li>Stress and Strain values will be having same units that you mention...</li>
+            <li>Also type angles in degrees and the result of angles will be in degrees...</li>
+        </ul>
+    </div>
+    <div class="container2">
+        <h3 class="head5">&sigma;<sub>1</sub> or &epsilon;<sub>1</sub> value:</h3>
+        <input type="text" id="sigma1" required />
+        <h3 class="head6">&sigma;<sub>2</sub> or &epsilon;<sub>2</sub> value:</h3>
+        <input type="text" id="sigma2" required />
+        <h3 class="head7">&theta;<sub>p</sub> value:</h3>
+        <input type="text" id="thetap" />
+        <h3 class="head8">(&sigma;<sub>xx</sub>)<sub>i</sub> or (&epsilon;<sub>xx</sub>)<sub>i</sub> value:</h3>
+        <input type="text" id="sigmaxtheta" required />
+        <h3 class="head9">(&sigma;<sub>yy</sub>)<sub>i</sub> or (&epsilon;<sub>yy</sub>)<sub>i</sub> value:</h3>
+        <input type="text" id="sigmaytheta" required />
+        <h3 class="head10">(&tau;<sub>xy</sub>)<sub>i</sub> or (&epsilon;<sub>xy</sub>)<sub>i</sub> value:</h3>
+        <input type="text" id="sigmaxytheta" required />
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
